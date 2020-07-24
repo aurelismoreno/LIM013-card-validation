@@ -5,7 +5,8 @@ const validator = {
             if (i % 2 != 0) {
                 numberArray[i] = numberArray[i] * 2;
                 if (numberArray[i] > 9) {
-                    numberArray[i] = parseInt(String(numberArray[i]).charAt(0)) + parseInt(String(numberArray[i]).charAt(1))
+                    numberArray[i] = parseInt(String(numberArray[i]).charAt(0)) + 
+                                     parseInt(String(numberArray[i]).charAt(1))
                 }
             }
         }
@@ -28,7 +29,6 @@ const validator = {
         const maskingCharacters = creditCardNumber.substr(1, creditCardNumber.length - 5).replace(/\d/g, '#');
         return `${firstCharacter}${maskingCharacters}${last4Characters}`; */
         return creditCardNumber.split('').map((letter, idx) => idx < creditCardNumber.length - 4 ? '#' : letter).join('');
-
     }
 
 
