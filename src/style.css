@@ -1,11 +1,133 @@
- *{
+* {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 }
 
 body {
-	background: #ddeefc;
-	font-family: Arial, Helvetica, sans-serif;
+	background: #fc4a1a; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#f7b733,
+		#fc4a1a
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	font-family: 'Roboto';
 }
- 
+/* h1 {
+  
+} */
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.formulario-tarjeta {
+	background: lightblue;
+	width: 30%;
+	max-width: 1000px;
+	padding: 40px 20px;
+	border: 1px solid #ccc;
+	border-radius: 1em;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	top: 25px;
+}
+
+.formulario-tarjeta label {
+	display: block;
+	color: #020203;
+	margin-bottom: 1px;
+	font-size: 20px;
+}
+
+.formulario-tarjeta input,
+.formulario-tarjeta select,
+.btn-validar {
+	border: 2px solid #ced6e0;
+	font-size: 18px;
+	height: 35px;
+	width: 100%;
+	padding: 5px 30px;
+	border-radius: 5px;
+}
+
+.formulario-tarjeta input:hover,
+.formulario-tarjeta select:hover {
+	border: 2px solid #fc4a1a;
+}
+
+.formulario-tarjeta input {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.formulario-tarjeta .flexbox {
+	display: flex;
+	justify-content: space-between;
+}
+
+.formulario-tarjeta .expira {
+	width: 100%;
+}
+
+.formulario-tarjeta .grupo-select {
+	width: 100%;
+	margin-right: 15px;
+	position: relative;
+}
+.formulario-tarjeta .ccv {
+	min-width: 100px;
+}
+.formulario-tarjeta .btn-validar {
+	border: none;
+	padding: 1px;
+	font-size: 30px;
+	color: #fff;
+	background: #2364d2;
+	box-shadow: 2px 2px 10px 0px rgba(0, 85, 212, 0.4);
+	cursor: pointer;
+}
+
+.formulario-tarjeta .btn-validar:hover {
+	background: #1850b1;
+}
+
+
+/* div+div {
+    margin-top: 1em;
+}
+
+label span {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+}
+
+input{
+    font: 1em sans-serif;
+    width: 250px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+
+input:focus, textarea:focus {
+    border-color: #000;
+}
+
+button {
+    margin: 20px 0 0 124px;
+}
+
+label {
+  position: relative;
+}
+ */

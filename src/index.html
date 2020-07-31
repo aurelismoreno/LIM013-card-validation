@@ -9,6 +9,54 @@
 	</head>
 
 	<body>
-		
+		<form action="" id="formulario-tarjeta" class="formulario-tarjeta">
+			<h1>Información de pago</h1>
+			<section>
+				<div class="grupo">
+					<label for="tipo">
+						<span>Tipo de tarjeta</span>
+					</label>
+
+					<select id="tipo" name="tipotarjeta">
+						<option value="visa">VISA</option>
+						<option value="mc">MASTERCARD</option>
+					</select>
+				</div>
+
+				<div class="grupo">
+					<label for="numero">Número de tarjeta</label>
+					<input type="text" id="numero" name="numero" maxlength="16" autocomplete="off" />
+				</div>
+
+				<div class="grupo">
+					<label for="nombre">Nombre de tarjeta</label>
+					<input type="text" id="nombre" name="nombre" autocomplete="off" />
+				</div>
+
+				<div class="flexbox">
+					<div class="expira">
+						<label for="selectMes">Expiración</label>
+						<div class="flexbox">
+							<div class="grupo-select">
+								<select name="mes" id="selectMes">
+									<option disabled selected>Mes</option>
+								</select>
+							</div>
+							<div class="grupo-select">
+								<select name="year" id="selectYear">
+									<option disabled selected>Año</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="ccv">
+					<label for="inputCCV">CCV</label>
+					<input type="text" id="inputCCV" name="cvc" maxlength="3" />
+				</div>
+			</section>
+			<button type="submit" class="btn-validar">Validar</button>
+		</form>
 	</body>
 </html>
