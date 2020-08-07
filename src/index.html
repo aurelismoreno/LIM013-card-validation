@@ -1,36 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<meta charset="utf-8" />
+		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Sorpresa</title>
 		<link rel="stylesheet" href="style.css" />
-		<title>Tarjeta de crédito válida</title>
+		<link href="https://file.myfontastic.com/bDy7wwAHZ6bj4JDtTkfjeA/icons.css" rel="stylesheet">
 	</head>
-
 	<body>
-		<form action="" id="formulario-tarjeta" class="formulario-tarjeta">
-			<h1>Información de pago</h1>
-			<section>
+		<!-- --------------------------ESTRUCTURA DEL MENU -->
+		<header class="header">
+			<div class="contenedor">
+				<h1 class="logo">Sorpresa</h1>
+				<ul class="menu">
+					<li class="menuitem"><a class="menulink" href="">Cuenta</a></li>
+					<li class="menuitem"><a class="menulink" href="">Buscar</a></li>
+					<li class="menuitem"><a class="menulink" href="">Cesta</a></li>
+				</ul>
+			</div>
+		</header>
+		<div id="principal" class="principal">
+			<!-- -----------------------------------ESTRUCTURA DEL BANNER -->
+			<div class="banner">
+				<div class="contenedor">
+					<h2 class="bannertitulo">Regala un momento único</h2>
+				</div>
+			</div>
+			<!-- --------------------------------ESTRUCTURA DE LAS BANDEJAS  -->
+			<main class="main">
+				<div class="contenedor">
+					<section class="info">
+						<div class="infocolumna">
+							<img src="img/bandeja1.jpg" alt="" class="infoimg" />
+							<p class="infoprecio">S /50.00.</p>
+							<a class="infotitulo" href="">Añadir a la cesta</a>
+						</div>
+						<div class="infocolumna">
+							<img src="img/bandeja2.jpg" alt="" class="infoimg" />
+							<p class="infoprecio">S /50.00.</p>
+							<a class="infotitulo" href="">Añadir a la cesta</a>
+						</div>
+						<div class="infocolumna">
+							<img src="img/bandeja3.jpg" alt="" class="infoimg" />
+							<p class="infoprecio">S /50.00.</p>
+							<a class="infotitulo" href="">Añadir a la cesta</a>
+						</div>
+					</section>
+					<button type="button" id="btnregistrar" class="btnregistrar">
+						Registrate para comprar
+					</button>
+				</div>
+			</main>
+		</div>
+		<!-- ----------------------------------------------------------------ESTRUCTURA DE DATOS Y PAGO-->
+		<div id="datos" class="datos">
+			<!-- -----------------------------------------ESTRUCTURA DE DATOS-->
+			<form action="#" method="post" id="datospersonales" class="datospersonales ocultar">
+				<h1 id="title">Registrate para comprar</h1>
 				<div class="grupo">
-					<label for="tipo">
-						<span>Tipo de tarjeta</span>
-					</label>
-
-					<select id="tipo" name="tipotarjeta">
-						<option value="visa">VISA</option>
-						<option value="mc">MASTERCARD</option>
-					</select>
+					<label for="nombreyapellido">Nombre y apellido</label>
+					<input type="text" id="nombreyapellido" name="nombreyapellido" />
 				</div>
 
 				<div class="grupo">
+					<label for="correo">Correo electrónico</label>
+					<input type="text" id="correo" name="correo" autocomplete="off" />
+				</div>
+
+				<div class="grupo">
+					<label for="telefono">Número de teléfiono</label>
+					<input type="text" id="telefono" name="telefono" maxlength="9" />
+				</div>
+				<button type="button" id="btndatos" class="btndatos">Continuar</button>
+			</form>
+			<!-- ----------------------------------------------------------------ESTRUCTURA DE PAGO-->
+			<form action="#" method="post" id="formulario-tarjeta" class="formulario-tarjeta ocultar">
+				<h1 id="title">Información de pago</h1>
+				<div class="grupo">
 					<label for="numero">Número de tarjeta</label>
-					<input type="text" id="numero" name="numero" maxlength="16" autocomplete="off" />
+					<input type="text" id="numero" name="numero" maxlength="16" />
 				</div>
 
 				<div class="grupo">
 					<label for="nombre">Nombre de tarjeta</label>
 					<input type="text" id="nombre" name="nombre" autocomplete="off" />
+				</div>
+
+				<div class="grupo">
+					<label for="inputCCV">CCV</label>
+					<input type="text" id="inputCCV" name="cvc" maxlength="3" />
 				</div>
 
 				<div class="flexbox">
@@ -50,13 +108,29 @@
 						</div>
 					</div>
 				</div>
-
-				<div class="ccv">
-					<label for="inputCCV">CCV</label>
-					<input type="text" id="inputCCV" name="cvc" maxlength="3" />
+				<button type="button" id="btnvalidar" class="btnvalidar">Validar</button>
+			</form>
+		</div>
+		<!--  -------------------------------------------ESTRCTURA GRACIAS POR SU COMPRA  -->
+		<div id="gracias" class="gracias ocultar">
+			<a href="#" class="icon-check"></a>
+			<br/>
+			<br/>
+			<h1 id="title" class="title">Compra finalizada</h1>
+			<p>Gracias por su compra su numero de pedido es N° 000123.</p>
+			
+		</div>
+		<!----------------------------------------- ESTRUCTURA DEL FOOTER PAGINA -->
+		<footer class="footer">
+			<div class="contenedor">
+				<div class="social">
+					<a href="#" class="icon-facebook"></a>
+					<a href="#" class="icon-twitter"></a>
+					<a href="#" class="icon-instagram"></a>
 				</div>
-			</section>
-			<button type="submit" class="btn-validar">Validar</button>
-		</form>
+				<p class="copy">&copy; Sorpresa 2020 - Todos los derechos</p>
+			</div>
+		</footer>
+		<script src="index.js" type="module"></script>
 	</body>
 </html>

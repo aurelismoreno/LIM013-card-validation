@@ -1,43 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 }
+/* '''''''''''''''''''''''''''''''''''''ESTILOS GENERALES  */
+
+img {
+	display: inline-flex;
+	max-width: 100%;
+}
 
 body {
-	background: #fc4a1a; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(
-		to right,
-		#f7b733,
-		#fc4a1a
-	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	font-family: 'Roboto';
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
 }
-/* h1 {
-  
-} */
-h1 {
-    display: block;
-    font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
+h2 {
+	height: 100px;
+	text-align: center;
+	padding: 0;
 }
-.formulario-tarjeta {
-	background: lightblue;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	letter-spacing: 1.5px;
+	text-align: center;
+}
+
+.contenedor {
+	margin: auto;
+	width: 99%;
+}
+/*-------------------------------------- ESTILOS HEADER */
+.header {
+	height: 60px;
+	background: coral;
+}
+.header .contenedor {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	margin: 5px;
+	color: black;
+}
+/* -------------------MOSTRAR Y OCULTAR  */
+
+.mostrar {
+	display: none;
+}
+.ocultar {
+	display: none;
+}
+
+/* --------------------------------------- ESTILOS DEL MENU */
+
+.menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+
+.menulink {
+	display: inline-flex;
+	padding: 15px;
+	text-decoration: none;
+	color: black;
+	margin-top: 0;
+}
+
+.infotitulo {
+	display: inline-flex;
+	padding: 15px;
+	background-color: lightskyblue;
+	text-decoration: none;
+	color: black;
+	margin-top: 0;
+	border-radius: 1em;
+	text-align: center;
+}
+
+.menulink:hover,
+.select {
+	color: #fba919;
+}
+
+/*---------------------------- ESTILOS DEL BANNER */
+.banner {
+	max-width: 1500px;
+	height: 500px;
+	border: none;
+	z-index: -1000;
+	background: lightskyblue;
+}
+.bannertitulo {
+	font-size: 80px;
+	height: 300px;
+	padding: none;
+}
+.banner .contenedor {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 100%;
+	color: #fff;
+	text-align: center;
+}
+
+/* ------------------------------ESTILOS DE LAS BANDEJAS */
+
+.info {
+	display: inline-flex;
+	justify-content: space-around;
+	margin-top: -90px;
+	width: 100%;
+}
+.infocolumna {
+	background: #fba919;
+	color: #fff;
+	padding: 15px;
+	margin-bottom: 30px;
+	width: 200px;
+}
+.infoprecio {
+	text-align: center;
+}
+
+.main {
+	display: block;
+	width: 100%;
+	height: 350px;
+	left: 522px;
+	margin-top: -90px;
+	background: rgba(241, 190, 154, 0.63);
+}
+.btnregistrar {
+	border-radius: 1em;
+	font-size: 20px;
+	text-align: center;
+	background-color: lightcoral;
+	transform: translateX(180%) translateY(50%);
+	border: 2px solid #ced6e0;
+	height: 35px;
+	padding: 5px 30px;
+}
+
+.contenedor .btnregistrar {
+	border: none;
+	height: 40px;
+	color: #fff;
+	background: #2364d2;
+	cursor: pointer;
+}
+
+/* ESTILOS DE FORMULARIO DE DATOS  */
+.datospersonales {
+	text-align: center;
+	background-color: lightskyblue;
 	width: 30%;
+	height: 450px;
 	max-width: 1000px;
-	padding: 40px 20px;
+	padding: 30px 20px;
 	border: 1px solid #ccc;
 	border-radius: 1em;
 	margin: auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	position: relative;
+	top: 25px;
+}
+
+.datospersonales label {
+	display: block;
+	color: #020203;
+	margin-bottom: 1px;
+	font-size: 20px;
+}
+.datospersonales input,
+.btndatos {
+	border: 2px solid #ced6e0;
+	font-size: 18px;
+	height: 35px;
+	width: 100%;
+	padding: 5px 30px;
+	border-radius: 1em;
+}
+
+.datospersonales input:hover {
+	border: 2px solid #fc4a1a;
+}
+
+.datospersonales input {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.datospersonales .btndatos {
+	border: none;
+	color: #fff;
+	background: #2364d2;
+	cursor: pointer;
+	transform: translateX(0%) translateY(200%);
+}
+
+.datospersonales .btndatos:hover {
+	background: #1d67e7;
+}
+/* ESTILOS DE FORMULARIO DE PAGO */
+.formulario-tarjeta {
+	background-color: lightskyblue;
+	width: 30%;
+	max-width: 400px;
+	padding: 30px 20px;
+	border: 1px solid #ccc;
+	border-radius: 1em;
+	margin: auto;
 	top: 25px;
 }
 
@@ -50,13 +232,13 @@ h1 {
 
 .formulario-tarjeta input,
 .formulario-tarjeta select,
-.btn-validar {
+.btnvalidar {
 	border: 2px solid #ced6e0;
 	font-size: 18px;
 	height: 35px;
 	width: 100%;
 	padding: 5px 30px;
-	border-radius: 5px;
+	border-radius: 1em;
 }
 
 .formulario-tarjeta input:hover,
@@ -73,61 +255,72 @@ h1 {
 	display: flex;
 	justify-content: space-between;
 }
-
-.formulario-tarjeta .expira {
-	width: 100%;
-}
-
-.formulario-tarjeta .grupo-select {
-	width: 100%;
-	margin-right: 15px;
-	position: relative;
-}
 .formulario-tarjeta .ccv {
 	min-width: 100px;
 }
-.formulario-tarjeta .btn-validar {
+.formulario-tarjeta .expira {
+	width: 100%;
+	padding: 15px;
+}
+
+.formulario-tarjeta .grupo-select {
+	width: 90%;
+	margin-right: 15px;
+	position: relative;
+}
+
+.formulario-tarjeta .btnvalidar {
 	border: none;
-	padding: 1px;
-	font-size: 30px;
 	color: #fff;
 	background: #2364d2;
-	box-shadow: 2px 2px 10px 0px rgba(0, 85, 212, 0.4);
 	cursor: pointer;
+	transform: translateX(0%) translateY(50%);
 }
 
-.formulario-tarjeta .btn-validar:hover {
-	background: #1850b1;
+.formulario-tarjeta .btnvalidar:hover {
+	background: #1d67e7;
 }
 
-
-/* div+div {
-    margin-top: 1em;
+/* ESTILOS GRACIAS*/
+.gracias {
+	background: #333;
+	color: #fff;
+	padding: 100px;
+	text-align: center;
+}
+.gracias [class^='icon-'] {
+	display: inline-block;
+	color: #333;
+	text-decoration: none;
+	font-size: 100px;
+	background: white;
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	line-height: 170px;
 }
 
-label span {
-    display: inline-block;
-    width: 120px;
-    text-align: right;
+.title{
+	position: relative;
+}
+/*-----------------ESTILOS DEL FOOTER-----------------*/
+
+.footer {
+	background: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
 }
 
-input{
-    font: 1em sans-serif;
-    width: 250px;
-    box-sizing: border-box;
-    border: 1px solid #999;
+.footer .social [class^='icon-'] {
+	display: inline-block;
+	color: #333;
+	text-decoration: none;
+	font-size: 30px;
+	padding: 10px;
+	background: white;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	line-height: 40px;
 }
-
-
-input:focus, textarea:focus {
-    border-color: #000;
-}
-
-button {
-    margin: 20px 0 0 124px;
-}
-
-label {
-  position: relative;
-}
- */
