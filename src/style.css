@@ -182,7 +182,7 @@ h6 {
 	font-size: 20px;
 }
 .datospersonales input,
-.btndatos {
+.btncontinuar {
 	border: 2px solid #ced6e0;
 	font-size: 18px;
 	height: 35px;
@@ -200,7 +200,7 @@ h6 {
 	text-transform: uppercase;
 }
 
-.datospersonales .btndatos {
+.datospersonales .btncontinuar {
 	border: none;
 	color: #fff;
 	background: #2364d2;
@@ -208,8 +208,14 @@ h6 {
 	transform: translateX(0%) translateY(200%);
 }
 
-.datospersonales .btndatos:hover {
+.datospersonales .btncontinuar:hover {
 	background: #1d67e7;
+}
+
+.incompleto {
+    border: 4px solid rgba(151, 56, 225, 0.65);
+    box-sizing: border-box;
+    border-radius: 20px;
 }
 /* ESTILOS DE FORMULARIO DE PAGO */
 .formulario-tarjeta {
@@ -300,7 +306,7 @@ h6 {
 	line-height: 170px;
 }
 
-.title{
+.titlegracias{
 	position: relative;
 }
 /*-----------------ESTILOS DEL FOOTER-----------------*/
