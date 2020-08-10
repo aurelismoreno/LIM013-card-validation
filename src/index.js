@@ -35,11 +35,12 @@ function getUserInput() {
 numero.addEventListener('change', (e) => {
 	e.preventDefault();
 	if (validator.isValid(getUserInput())) {
-		alert('Tarjeta Valida');
+    document.getElementById('mensaje').textContent='Tarjeta valida';
+		/* alert('Tarjeta Valida'); */
 	} else {
-		alert('Tarjeta Invalida');
-	}
-	if (validator.maskify(getUserInput())) {
-		return numero;
-	}
+    /* alert('Tarjeta Invalida'); */
+    document.getElementById('mensaje').textContent='Tarjeta invalida';
+  }
+  let mascaraconvertir = validator.maskify(getUserInput());
+  document.getElementById('mascara').textContent= mascaraconvertir;
 });

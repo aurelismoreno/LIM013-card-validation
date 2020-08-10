@@ -5,7 +5,7 @@
 	margin: 0;
 	box-sizing: border-box;
 }
-/* '''''''''''''''''''''''''''''''''''''ESTILOS GENERALES  */
+/* -----------------------------------ESTILOS GENERALES  */
 
 img {
 	display: inline-flex;
@@ -161,7 +161,7 @@ h6 {
 	cursor: pointer;
 }
 
-/* ESTILOS DE FORMULARIO DE DATOS  */
+/* -----------------------------ESTILOS DE FORMULARIO DE DATOS  */
 .datospersonales {
 	text-align: center;
 	background-color: lightskyblue;
@@ -217,7 +217,7 @@ h6 {
     box-sizing: border-box;
     border-radius: 20px;
 }
-/* ESTILOS DE FORMULARIO DE PAGO */
+/* ---------------------------ESTILOS DE FORMULARIO DE PAGO */
 .formulario-tarjeta {
 	background-color: lightskyblue;
 	width: 30%;
@@ -229,6 +229,9 @@ h6 {
 	top: 25px;
 }
 
+.mascara,.mensaje{
+	text-align: center;
+}
 .formulario-tarjeta label {
 	display: block;
 	color: #020203;
@@ -287,7 +290,7 @@ h6 {
 	background: #1d67e7;
 }
 
-/* ESTILOS GRACIAS*/
+/*------------------------------------ ESTILOS GRACIAS*/
 .gracias {
 	background: #333;
 	color: #fff;
