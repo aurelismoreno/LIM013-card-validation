@@ -21,7 +21,6 @@ SORPRESA es una tienda virtual de regalos que busca representar los sentimientos
 El producto final nace de el feedback recibido de compañeras y familiares , al prototipo inicial presentaba exceso de elementos , que influia de forma negativa en el proceso de compra porque el usuario no ubicaba con rapidez la opcion de comprar , se realizaron las mejoras sugeridas hasta llegar al producto final.
 
 ### COMO EJECUTARLO 
-Al proyecto se puede acceder desde [aqui](https://aurelismoreno.github.io/LIM013-card-validation/
-)
+Al proyecto se puede acceder desde [aqui](https://aurelismoreno.github.io/LIM013-card-validation/src/index.html)
 
  
